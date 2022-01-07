@@ -1,8 +1,8 @@
 import numpy as np
 import functools
 from scipy import ndimage as ndi
-from .._shared.utils import warn
-from .selem import _default_selem
+from skimage._shared.utils import warn
+from skimage.morphology.selem import _default_selem
 
 def _check_dtype_supported(ar):
     # Should use `issubdtype` for bool below, but there's a bug in numpy 1.7
